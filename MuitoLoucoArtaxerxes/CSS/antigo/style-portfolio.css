@@ -1,0 +1,28 @@
+/*-------------------------------------------------------------Formatacoes Gerais-------------------------------------------------------------*/
+/*Formatando a lista*/
+.lista-trabalhos{
+    list-style: none;
+    padding: 0;
+}
+
+/*Sobrepondo a margem criada anteriormente no estilo da pagina*/
+.lista-trabalhos__item{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px;
+}
+
+/*Tirando o sublinhado dos links*/
+.lista-trabalhos__item a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Formatando titulos*/
+.lista-trabalhos__titulo{
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid black;
+    padding-left:10px;
+}

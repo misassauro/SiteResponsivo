@@ -1,0 +1,46 @@
+/*-------------------------------------------------------------Formatacoes Gerais-------------------------------------------------------------*/
+/*Formatando secao do cabecalho*/
+.pagina-cabecalho{
+    color: white;
+    background-color: #dd3f3f;
+    background-image: url("../IMG/cabecalho-pagina-bg.jpg");
+    background-attachment: fixed;/*Fixa o conteudo*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*Formatando titulo*/
+.pagina-cabecalho__titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Formatando a barrinha debaixo do titulo (Os dois pontos indicam o pseudoelemento)*/
+.pagina-cabecalho__titulo::after{
+    content: ''; /*Atribuindo conteudo para aparecer na tela(Necessario pois foi indicado que e um elemento)*/
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto; /*Deixa margem superior/inferior 0 e direita/esquerda automatica*/ 
+    margin-top: 20px; /*Colocando depois do margin 0 auto se nao sobrescreve*/
+}
+
+/*Formatando o conteudo principal*/
+.pagina-conteudo{
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*O p indica que todos os paragrafos dentro da classe pagina-conteudo receberao a formatacao a seguir*/
+.pagina-conteudo p{
+    color: #3a3a3a;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+}

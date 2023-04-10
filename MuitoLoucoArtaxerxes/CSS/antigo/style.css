@@ -1,0 +1,167 @@
+/*-------------------------------------------------------------Formatacoes Gerais-------------------------------------------------------------*/
+
+/*Aqui faz com que o navegador nao calcule a dimensao de um elemento somando bordas e margens com altura e largura*/
+*{
+    box-sizing: border-box;
+}
+
+/*Ajustando imagens*/
+img{
+    max-width: 100%; /*Nao permite a imagem passar do tamnho da tela*/
+    height:auto;/*Nao deixa a imagem ficar desproporcional*/
+}
+
+/*Importanto fontes*/
+@font-face {
+    font-family: "Source-Sans-Pro";
+    src: url(../Fontes/SourceSansPro-Regular.otf);
+}
+
+/*Quando eu escrever no html que a fonte e bold, leva pra essa automaticamente*/
+@font-face {
+    font-family: "Source-Sans-Pro";
+    src: url(../Fontes/SourceSansPro-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Source-Sans-Pro";
+    src: url(../Fontes/SourceSansPro-BoldIt.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Definindo a font para todo o html*/
+body{
+    font-family: "Source-Sans-Pro";
+}
+
+/*--------------------------------------------------------------------Menu----------------------------------------------------------------------*/
+
+/*Cor de fundo para o html*/
+.cabecalho{
+    background: white;
+    padding: 15px;
+}
+
+/*Editando a logo com a tag logo*/
+.logo{
+    background-image: url("../IMG/logotipo-preto.png");/*Importando imagem de fundo*/
+    background-repeat: no-repeat; /*Comando para nao repetir a imagem varias vezes*/
+    display: block; /*h1 ja vem com display block, mas aqui foi usado, pois a classe sera usada outras vezes*/
+    width: 120px;
+    height: 53px;
+    text-indent: -9999px; /*Gambiarra pra fazer o texto do h1 sumir*/
+    margin: 0; /*tirando a margem que vem automaticamente do h1*/
+}
+
+/*Chamando a logo branca que sera usada no rodape*/
+.logo--branco{
+    background-image: url("../IMG/logotipo-branco.png");
+}
+
+/* Editando o botao do menu*/
+.menu-principal__btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: white;
+    background-image: url(../IMG/btn/menuprincipal-btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px; /*distancia da lateral e do topo*/
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer; /* O mouse fica com aquela maozinha indicando que e um link*/
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* -- indica que e um modificador*/
+.menu-principal__btn--fechar{
+    background-position: -48px 7px;
+}
+
+/* Editando a lista do menu*/
+.menu-principal__lista{
+    padding: 0; /*Tirando a margem*/
+    list-style: none; /*Faz sumir os pontos do lado da lista*/
+
+}
+
+.menu-principal__item{
+    text-decoration: none; /*Tirando a linha de baixo da palavra*/
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px; /*Margem de baixo do texto*/
+    display: block; /*Necessario para fazer a margem funcionar*/
+    font-size: 18px;
+}
+
+.menu-principal__item--atual{
+    color: #f44;
+}
+
+/*---------------------------------------------------------------------Rodape--------------------------------------------------------------------*/
+/*Cor de todos os textos do rodape*/
+.rodape{
+    color: white;
+}
+
+/*Margem da logo*/
+.rodape .logo{
+    margin-bottom: 20px;
+}
+
+/*Imagem de fundo do rodape*/
+.rodape__linha-1{
+    background-color: #272525;
+    background-image: url(../IMG/rodape/rodape-bg.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+
+/*Configuracoes da barra de copyright*/
+.rodape__linha-2{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Formatando espaco de uma coluna e outra*/
+.rodape__coluna{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*Formatacao de titulo*/
+.rodape__titulo{
+    border-bottom: 1px solid white;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+
+/*Formatando link da lista*/
+.rodape__lista-links{
+    padding: 0;
+    list-style: none;
+
+}
+
+/*Formatando texto das lista do rodape*/
+.rodape__lista-links__item{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*Atribuindo simbolo para a lista do rodape por meio do before*/
+.rodape__lista-links__item::before{
+    content: ">";
+    margin-right: 7px;
+    color:#f44;
+}

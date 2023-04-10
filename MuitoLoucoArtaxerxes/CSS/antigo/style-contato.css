@@ -1,0 +1,59 @@
+/*-------------------------------------------------------------Formatacoes Gerais-------------------------------------------------------------*/
+/*Formatacao geral do formulario*/
+.formulario{
+    background-color: #efecec;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 40px 15px 40px 15px;
+    /*Tambem da pra usar inset que a sombra fica pra dentro*/
+    box-shadow: 0 3px 5px #989898; /* Esquerda/Vertical/Desfocagem/Expansao */
+}
+
+/*Formatacao das divs do form*/
+.formulario__grupo{
+    margin-bottom: 10px;
+}
+
+/*Formatando os inputs*/
+.formulario__campo{
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 10px 5px; /* Top e Bottom / Left e Right */
+}
+
+/*Formatando label*/
+.formulario__grupo{
+    color: #343434;
+}
+
+/*Formatando botao enviar*/
+.formulario__botao{
+    color: red;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 300px;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-weight: weight;
+}
+
+/*Formatacao de mapa*/
+.mapa{
+    height:0;
+    padding-bottom: 100%; /*Faz a largura de adequar ao tamanho da tela*/
+    position: relative;
+    overflow: relative; /*Boa pratica*/
+    margin: 0 -15px -25px -15px;
+}
+
+/*Editanto o iframe dentro da classe mapa*/
+.mapa iframe{
+    width: 100% !important; /*O !important sobrescreve as configs que vieram automaticamente no iframe*/ 
+    height: 100% !important;
+    position: absolute;
+    top: 0; /*Boa pratica*/
+    left: 0; /*Boa pratica*/
+}

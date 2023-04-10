@@ -1,0 +1,29 @@
+.mapa{
+    display: block;
+    height:0;
+    padding-bottom: 100%; 
+    position: relative;
+    overflow: relative; 
+    margin: 0 auto;
+    margin-bottom: 2%;
+    iframe{
+        width: 90% !important; 
+        height: 100% !important;
+        margin-left: 5%;
+
+        position: absolute;
+        top: 0;  
+    }
+    @media(min-width: 450px){
+        padding-bottom: 60%; 
+    }
+    @media(min-width: $breakpoint-md){
+        padding-bottom: 40%; 
+    }
+    @media(min-width: $breakpoint-lg){
+        
+        max-width: $breakpoint-lg;
+        
+    }
+}
+
