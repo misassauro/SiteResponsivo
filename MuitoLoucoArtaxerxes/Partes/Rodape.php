@@ -8,11 +8,7 @@
                 <a href="index.php" class="logo logo--branco"> Design Responsivo</a>
                 <!--Classe logo e um exemplo de componentizacao, classe que serve
                     para varios componentes-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ut at dolor eligendi.
-                    Tempora
-                    consequatur repudiandae nesciunt voluptatibus nihil incidunt eveniet reprehenderit quidem
-                    harum
-                    molestiae, dolorem, temporibus repellat accusantium non?</p>
+                <p>Conheça mais sobre o LanchoNET e seus desenvovledores acessando as nossas redes sociais.</p>
             </div>
             <div class="rodape__coluna">
                 <h2 class="rodape__titulo">Social</h2>
@@ -43,7 +39,7 @@
     </div>
 
     <div class="rodape__linha-2">
-        © <?php echo date('Y') //Funcao para encontrar ano ?> - Todos os direitos reservados - Pedro Torini
+        © <?php echo date('Y') //Funcao para encontrar ano ?> - Todos os direitos reservados - Equipe Poggers
     </div>
 </footer>
 <!--<script src="JS/Jquery.js"></script>
